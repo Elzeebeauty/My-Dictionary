@@ -4,6 +4,9 @@ import "./Results.css"
 
 export default function Photos(props) {
 let [photos,setPhotos] =useState(null);
+const apiKey="563492ad6f9170000100000192ae5f85fdbf4f7ab621e9b48f4ee7da";
+const headers ={ Authorization: `Bearer ${apiKey}`};
+const apiUrl=`https://api.pexels.com/v1/search?query=people`
 
 function HandlePhotos(response){
     setPhotos(response.data.photos);
