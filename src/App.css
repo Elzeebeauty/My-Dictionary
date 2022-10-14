@@ -1,0 +1,29 @@
+body {
+  background-image: url(Images/pexels.jpg);
+  background-size: cover;
+}
+
+.App {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.App footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 20px;
+}
+
+.App footer a {
+  color: #1210b4;
+  text-decoration: none;
+}
+
+.App footer a:hover {
+  color: #11752f;
+}
+
+
+h1 {
+  text-align: center;
+}
