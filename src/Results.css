@@ -1,14 +1,14 @@
 section {
-    border: 1px solid gray;
+    border: 1px solid rgb(50, 51, 78);
     border-radius: 10px;
-    box-shadow: 0 5px 10px gray;
+    box-shadow: 0 5px 10px rgb(38, 57, 78);
     padding: 16px;
     margin-top: 16px;
-    background-color: #289236;
+    background-color: #49448f;
 }
 
 .Results {
-    border: 1px solid #CAB4D4;
+    border: 1px solid #94869b;
     border-radius: 10px;
     margin: 30px;
     padding: 30px;
@@ -17,7 +17,7 @@ section {
 }
 
 .Dictionary input {
-    background-color: #a5dfbb;
+    background-color: #d9e4eb;
     color: #07110c;
     text-align: center;
     font-weight: bold;
@@ -35,8 +35,8 @@ section {
 }
 
 .Phonetics a:hover {
-    background-color: #CAB4D4;
-    color: #09641d;
+    background-color: #8b9ec9;
+    color: #5067a8;
 }
 
 .Phonetics {
