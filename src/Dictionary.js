@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{ useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
@@ -37,14 +37,12 @@ export default function Dictionary(props){
     return(
         <div className="Dictionary">
             <section>
-            <form className="dForm" onSubmit={handleSearch}>
+            <form className="Form" onSubmit={handleSearch}>
                 <input type= "search" placeholder="Insert a word" onChange={handleWordChange}/>
                
             </form>
             </section>
-            <section>
-                <Photos word={word} />
-                </section>
+            <section><Photos word={word} /></section>
             <Results data={data}/>
         </div>
     );

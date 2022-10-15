@@ -10,7 +10,7 @@ export default function Results (props){
     let word= data.word;
     let phonetics= data.phonetics;
     return (
-    <div className="results">
+    <div className="Results">
     <h1>{word}</h1>
     {phonetics.map(function(phonetic,index){
         return(
@@ -20,11 +20,11 @@ export default function Results (props){
         );
     })}
 
-    <p>{data.meaning.map(function(meaning,index){
+    <p>{data.meanings.map(function(meaning,index){
         return <div key={index}>
             <section>
             <Meaning meaning={meaning}/>
-            <Synonyms synonym={meaning.synonym}/>
+            <Synonyms synonyms={meaning.synonyms}/>
             </section>
             </div>})}
     </p>
