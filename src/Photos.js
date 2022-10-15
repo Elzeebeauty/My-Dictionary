@@ -4,16 +4,16 @@ import "./Results.css"
 
 export default function Photos(props) {
 let [photos,setPhotos] =useState(null);
-const apiKey="563492ad6f9170000100000192ae5f85fdbf4f7ab621e9b48f4ee7da";
-const apiUrl=`https://api.pexels.com/v1/search?query=${props.word}&people`;
-const headers ={ Authorization: `Bearer ${apiKey}`};
+let apiKey="563492ad6f9170000100000192ae5f85fdbf4f7ab621e9b48f4ee7da";
+let apiUrl=`https://api.pexels.com/v1/search?query=${props.word}&people`;
+let headers ={ Authorization: `Bearer ${apiKey}`};
 
 function HandlePhotos(response){
     setPhotos(response.data.photos);
 }
 
 useEffect(()=>{axios.get(apiUrl,{headers: headers })
-.then(HandlePhotos);},[props.word , apiUrl]) 
+.then(HandlePhotos);},[props.word, apiUrl]) 
 if(photos){
     return(
         <div className="photos row">

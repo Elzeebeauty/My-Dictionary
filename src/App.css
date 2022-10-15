@@ -6,13 +6,28 @@ body {
 }
 
 .App {
-  max-width: 900px;
-  margin: 30px auto;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.App-header {
+  margin-top: 100px;
+  color: #EBDCEA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-header img {
+  height: 70px;
+  pointer-events: none;
 }
 
 .App footer {
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   margin: 20px;
 }
 
@@ -24,7 +39,6 @@ body {
 .App footer a:hover {
   color: #11752f;
 }
-
 
 h1 {
   text-align: center;
